@@ -201,20 +201,6 @@ class STrainer(object):
                 for m in self.model.modules():
                     if hasattr(m, "mask_flops"):
                         mask_flops_t += np.transpose(m.mask_flops)
-                # for m in self.model.modules():
-                #     if hasattr(m, "active_channels"):
-                #         active_channels = np.transpose(m.active_channels)
-                # for m in self.model.modules():
-                #     if hasattr(m, "total_channels"):
-                #         total_channels = np.transpose(m.total_channels)
-                # for m in self.model.modules():
-                #     if hasattr(m, "flops_reduction"):
-                #         flops_reduction = np.transpose(m.flops_reduction)
-                # #print("Layer-wise FLOPs Reduction=",flops_reduction)
-                # for m in self.model.modules():
-                #     if hasattr (m,"sparsity"):
-                #         sparsity = np.transpose(m.sparsity)
-                #print("Layer-wise Sparsity=",sparsity*100)
 
                 # measure accuracy and record loss
                 acc1, acc5 = accuracy(mean_out, target, topk=(1, 5))
@@ -228,23 +214,14 @@ class STrainer(object):
                 losses.update(reduced_loss.item(), images.size(0))
                 top1.update(reduced_acc1.item(), images.size(0))
                 top5.update(reduced_acc5.item(), images.size(0))
-                # Flops_Reduction.update(flops_reduction, images.size(0))
-                # Sparsity.update(sparsity, images.size(0))
                 
                 # measure elapsed time
                 batch_time.update(time.time() - end)
                 end = time.time()
-        # sparsity = (active_channels/total_channels)*100
         Flops_Reduction = (((actual_flops_conv+actual_flops_mem) - (flops_conv+flops_mem+mask_flops_t))/(actual_flops_conv+actual_flops_mem))*100
 
         self.logger_dict["valid_loss"] = losses.avg
         self.logger_dict["valid_top1"] = top1.avg
-        # self.logger_dict["FLOPs"] = flops
-        # self.logger_dict["actual_FLOPs"] = actual_flops
-        # self.logger_dict["Active_Channels"] = active_channels
-        # self.logger_dict["Total_Channels"] = total_channels
-        # self.logger_dict["overall_sparsity"] = sparsity
-        #self.logger_dict["Overall_Sparsity"] = Sparsity.avg
         self.logger_dict["FLOPs_Reduction"] = Flops_Reduction
 
 
