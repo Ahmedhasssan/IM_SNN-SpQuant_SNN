@@ -194,78 +194,8 @@ def main():
     )
 
     if args.evaluate:
-        # cnt = 0
-        # for m in model.modules():
-        #     if hasattr(m, "layer_idx"):
-        #         m.layer_idx = cnt
-        #         cnt += 1
-        trainer.valid_epoch()        
-        # for m in model.modules():
-        #     if hasattr(m, "flops") or hasattr(m, "active_channels"):
-        #         flops = np.transpose(m.flops)
-        #         active_channels = np.transpose(m.active_channels)
-        #         total_channels = np.transpose(m.total_channels)
-        # model.apply(_report_sparsity)
-        # cnt_out += np.array(num_out)
-        # cnt_full += np.array(num_full)
-        # num_out = []
-        # num_full = []
-        # print('Sparsity of the update phase: %.1f %%' % (100-np.sum(cnt_full)*1.0/np.sum(cnt_out)*100))
-        # for m in model.modules():
-        #     if isinstance(m, nn.Conv2d):
-        #         print(m.weight.shape)
-                # import pdb;pdb.set_trace()
-        # for m in model.modules():
-        #     if hasattr(m, "sr"):
-        #         sr = np.transpose(m.sr)
-        #         cnt += 1
-        #         csv_file = "/home/ahasssan/QESNN/new_pruning/QESNN/ConvIn_distribution_prunned/"+"Layer"+str(cnt)+".csv"
-        #         with open(csv_file, "w") as f:
-        #             writer = csv.writer(f)
-        #             #header = list(m.sr.keys())
-        #             header = ['t_avg']
-        #             writer.writerow(header)
-        #             #writer.writerows(map(lambda x: [x], sr))
-        #             writer.writerows(sr)
-        # for m in model.modules():
-        #     if hasattr(m, "sr"):
-        #         sr = np.transpose(m.sr)
-        #         cnt += 1
-        #         csv_file = "/home/ahasssan/QESNN/new_pruning/QESNN/spike_distribution_prunned/"+"Layer"+str(cnt)+".csv"
-        #         with open(csv_file, "w") as f:
-        #             writer = csv.writer(f)
-        #             #header = list(m.sr.keys())
-        #             header = ['t_avg']
-        #             writer.writerow(header)
-        #             #writer.writerows(map(lambda x: [x], sr))
-        #             writer.writerows(sr)
-        # for m in model.modules():
-        #     if hasattr(m, "pixels_dist"):
-        #         #pixels = np.array(list(m.pixels_dist.items()))
-        #         cnt += 1
-        #         csv_file = "/home/ahasssan/QESNN/new_pruning/QESNN/mempixel_distribution_prunned/"+"Layer"+str(cnt)+".csv"
-        #         with open(csv_file, "w") as f:
-        #             writer = csv.writer(f)
-        #             header = list(m.pixels_dist.keys())
-        #             writer.writerow(header)
-        #             num_row = len(list(m.pixels_dist.values())[0])
-        #             for i in range(num_row):
-        #                 row = [m.pixels_dist[key][i] for key in header]
-        #                 writer.writerow(row)
-        #         f.close()
-        # nonzero = 0
-        # total = 0
-        # for m in model.modules():
-        #     if hasattr(m, "nonzero_channels") and hasattr(m, "total_channels"):
-        #         nonzero += m.nonzero_channels
-        #         total += m.total_channels
-        # print('Sparsity achieved: %.1f %%' % ((1-(nonzero/total))*100))
+        trainer.valid_epoch() 
         logger.info("Test accuracy = {:.3f}".format(trainer.logger_dict["valid_top1"]))
-        # logger.info("Prunned FLOPs = {:.3f}".format(trainer.logger_dict["FLOPs"]))
-        # logger.info("Active Channels = {:.3f}".format(trainer.logger_dict["Active_Channels"]))
-        # logger.info("Total Channels = {:.3f}".format(trainer.logger_dict["Total_Channels"]))
-        # logger.info("Overall Sparsity = {:.3f}".format(trainer.logger_dict["overall_sparsity"]))
-        # logger.info("Actual FLOPS = {:.3f}".format(trainer.logger_dict["actual_FLOPs"]))
         logger.info("FLOPS Reduction = {:.3f}".format(trainer.logger_dict["FLOPs_Reduction"]))
         exit()
 
