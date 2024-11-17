@@ -61,7 +61,7 @@ SpQuant-SNN and IM-SNN introduces:
 3. **End-to-End Pipeline**:
    - Combines quantization and sparsity in a unified framework for seamless training and inference.
 
-For a detailed explanation, refer to our [paper](link-to-paper).
+For a detailed explanation, refer to our [paper](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2024.1440000/full).
 
 ## Results
 
