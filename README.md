@@ -45,7 +45,7 @@ The repository includes examples for training and evaluating SNNs on popular Eve
 
 ```bash
 bash scripts/vgg9_dvs_cifar.sh
-python examples/vgg9_dvs_caltech.sh
+bash scripts/vgg9_dvs_caltech.sh
 ```
 
 ## Methodology
