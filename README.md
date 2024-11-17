@@ -40,28 +40,11 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Quick Start
-To train an SNN model with IM_SNN-SpQuant_SNN quantization:
-
-```python
-from spquant_snn import SpQuantTrainer
-
-# Initialize the trainer
-trainer = SpQuantTrainer(model, dataset, quantization_bits=8)
-
-# Train the model
-trainer.train(epochs=50)
-
-# Evaluate the model
-accuracy = trainer.evaluate()
-print(f"Test Accuracy: {accuracy:.2f}%")
-```
-
 ### Example Scripts
 The repository includes examples for training and evaluating SNNs on popular datasets like **MNIST** and **CIFAR-10**:
 
 ```bash
-python examples/train_mnist.py
+bash scripts/.py
 python examples/train_cifar10.py
 ```
 
