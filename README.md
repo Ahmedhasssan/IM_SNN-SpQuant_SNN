@@ -67,7 +67,7 @@ For a detailed explanation, refer to our [paper](https://www.frontiersin.org/jou
 
 SpQuant-SNN achieves state-of-the-art performance on spiking neural network benchmarks while dramatically reducing resource usage.
 
-# Dataset: DVS-CIFAR10
+## Dataset: DVS-CIFAR10
 
 | **Method**                   | **Architecture**       | **Weight Precision** | **Umem Precision** | **Weight Memory (MB)** | **Umem Memory (MB)** | **Total Memory (MB)** | **FLOPs Reduction** | **Top-1 Accuracy**       |
 |------------------------------|------------------------|-----------------------|--------------------|-------------------------|-----------------------|-----------------------|--------------------|--------------------------|
@@ -75,13 +75,14 @@ SpQuant-SNN achieves state-of-the-art performance on spiking neural network benc
 | Our work (Quant-SNN)         | VGG-9                 | 2-bit                | 1.58-bit           | 2.57                   | 0.23                 | 3.75                 | 1×                | 77.94% (-0.51)          |
 | Our work (SpQuant-SNN)       | VGG-9                 | 2-bit                | 1.58-bit           | 2.57                   | 0.23                 | 3.75                 | 5.0×              | 76.80% (-1.14)          |              |
 
-# Dataset: CIFAR10
+## Dataset: CIFAR10
 
 | **Method**                   | **Architecture**       | **Weight Precision** | **Umem Precision** | **Weight Memory (MB)** | **Umem Memory (MB)** | **Total Memory (MB)** | **FLOPs Reduction** | **Top-1 Accuracy**       |
 |------------------------------|------------------------|-----------------------|--------------------|-------------------------|-----------------------|-----------------------|--------------------|--------------------------|
-| Our work (SNN-BL)            | VGG-9                 | 32-bit               | 32-bit             | 41.12                  | 3.68                 | 48.58                | 1×                | 78.45%                  |
-| Our work (Quant-SNN)         | VGG-9                 | 2-bit                | 1.58-bit           | 2.57                   | 0.23                 | 3.75                 | 1×                | 77.94% (-0.51)          |
-| Our work (SpQuant-SNN)       | VGG-9                 | 2-bit                | 1.58-bit           | 2.57                   | 0.23                 | 3.75                 | 5.0×              | 76.80% (-1.14)          |              |
+| Our work (SNN-BL)  | ResNet-19 | 32-bit | 32-bit | 49.94 | 5.5 | 60.94 | 1× | 94.56%|
+| Our work (Quant-SNN) | ResNet-19 | 4-bit | 1.58-bit | 6.24 | 0.25 | 7.49 | 1× | 94.11% (-0.45)|
+| Our work (Quant-SNN) | Spikformer-4-256 | 8-bit | 1.58-bit | 9.62 | 0.25 | 15.26 | 1× | 94.99% (-0.52)|
+| Our work (SpQuant-SNN) | ResNet-19 | 4-bit | 1.58-bit | 6.24 | 0.25 | 7.49 | 5.1× | 93.09% (-1.48)|
 
 
 Experimental results of Quant-SNN and SpQuant-SNN on DVS datasets using T = 10. These results highlight the effectiveness of SpQuant-SNN in achieving high accuracy and energy efficiency for edge AI applications.
