@@ -41,19 +41,19 @@ pip install -r requirements.txt
 ## Usage
 
 ### Example Scripts
-The repository includes examples for training and evaluating SNNs on popular datasets like **MNIST** and **CIFAR-10**:
+The repository includes examples for training and evaluating SNNs on popular Event (**DVS-MNIST**, **DVS-CIFAR-10**) and Static image (**MNIST**, **CIFAR-10** and **Caltech-101**) datasets:
 
 ```bash
-bash scripts/.py
-python examples/train_cifar10.py
+bash scripts/vgg9_dvs_cifar.sh
+python examples/vgg9_dvs_caltech.sh
 ```
 
 ## Methodology
 
-SpQuant-SNN introduces:
+SpQuant-SNN and IM-SNN introduces:
 
 1. **Membrane Potential Quantization**:
-   - Reduces the precision of membrane potential representation to as low as 2-4 bits without degrading performance.
+   - Reduces the precision of membrane potential representation to as low as 1.5 bits without degrading performance.
 
 2. **Sparse Activations**:
    - Utilizes sparsity in spiking activations to minimize redundant computations, achieving significant energy savings.
