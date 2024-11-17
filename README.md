@@ -96,8 +96,8 @@ These results highlight the effectiveness of SpQuant-SNN in achieving high accur
 
 For any inquiries or collaboration opportunities, feel free to reach out:
 
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
-- **GitHub**: [yourusername](https://github.com/yourusername)
+- **Email**: [ah2288.@cornell.edu](mailto:ah2288@cornell.edu)
+- **GitHub**: [Ahmedhasssan]([https://github.com/yourusername](https://github.com/Ahmedhasssan))
 
 We welcome feedback, suggestions, and contributions to enhance SpQuant-SNN!
 
