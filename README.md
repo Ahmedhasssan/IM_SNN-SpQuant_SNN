@@ -36,6 +36,7 @@ Clone the repository and install dependencies:
 git clone https://github.com/yourusername/SpQuant-SNN.git
 cd SpQuant-SNN
 pip install -r requirements.txt
+```
 
 ## Usage
 
@@ -54,7 +55,7 @@ trainer.train(epochs=50)
 # Evaluate the model
 accuracy = trainer.evaluate()
 print(f"Test Accuracy: {accuracy:.2f}%")
-
+```
 
 ### Example Scripts
 The repository includes examples for training and evaluating SNNs on popular datasets like **MNIST** and **CIFAR-10**:
@@ -62,7 +63,7 @@ The repository includes examples for training and evaluating SNNs on popular dat
 ```bash
 python examples/train_mnist.py
 python examples/train_cifar10.py
-
+```
 
 ## Methodology
 
