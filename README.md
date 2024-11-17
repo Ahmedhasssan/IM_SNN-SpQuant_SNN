@@ -69,11 +69,11 @@ SpQuant-SNN achieves state-of-the-art performance on spiking neural network benc
 
 | **Method**                   | **Architecture**       | **Weight Precision** | **Umem Precision** | **Weight Memory (MB)** | **Umem Memory (MB)** | **Total Memory (MB)** | **FLOPs Reduction** | **Top-1 Accuracy**       |
 |------------------------------|------------------------|-----------------------|--------------------|-------------------------|-----------------------|-----------------------|--------------------|--------------------------|
-| DVS-CIFAR10   |          |           |            |             |           |             |            |
+| DVS-CIFAR10 |
 | Our work (SNN-BL)            | VGG-9                 | 32-bit               | 32-bit             | 41.12                  | 3.68                 | 48.58                | 1×                | 78.45%                  |
 | Our work (Quant-SNN)         | VGG-9                 | 2-bit                | 1.58-bit           | 2.57                   | 0.23                 | 3.75                 | 1×                | 77.94% (-0.51)          |
 | Our work (SpQuant-SNN)       | VGG-9                 | 2-bit                | 1.58-bit           | 2.57                   | 0.23                 | 3.75                 | 5.0×              | 76.80% (-1.14)          |              |
-| N-Caltech   |          |           |            |             |           |             |            |
+| N-Caltech   |  
 | Our work (SNN-BL)            | VGG-9                 | 32-bit               | 32-bit             | 41.12                  | 3.68                 | 48.58                | 1×                | 80.45%                  |
 | Our work (Quant-SNN)         | VGG-9                 | 2-bit                | 1.58-bit           | 2.57                   | 0.23                 | 3.75                 | 1×                | 79.45% (-1.0)           |
 | Our work (SpQuant-SNN)       | VGG-9                 | 2-bit                | 1.58-bit           | 2.57                   | 0.23                 | 3.75                 | 4.8×              | 78.65% (-1.8)           |
