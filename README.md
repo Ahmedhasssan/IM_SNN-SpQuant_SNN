@@ -14,11 +14,11 @@ SpQuant-SNN introduces an innovative quantization strategy for spiking neural ne
 ---
 
 ## Features
-- **Ultra-Low Precision Quantization**: Employs novel quantization techniques tailored for spiking neural networks.
+- **Ultra-Low Precision Quantization**: Employs gird-based quantization techniques tailored for hardware-aware spiking neural networks.
 - **Sparse Activations**: Reduces computational overhead by leveraging sparsity in activations.
 - **Energy Efficiency**: Optimized for on-device inference, ensuring low energy consumption for edge devices.
 - **Flexible Framework**: Easy integration with popular deep learning libraries like PyTorch.
-- **Scalability**: Demonstrates high performance across various SNN architectures and applications.
+- **Scalability**: Demonstrates high performance across various SNN architectures and event/static datasets.
 
 ---
 
