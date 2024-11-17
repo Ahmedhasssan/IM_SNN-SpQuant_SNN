@@ -8,8 +8,8 @@ SpQuant-SNN introduces an innovative quantization strategy for spiking neural ne
 - [Usage](#usage)
 - [Methodology](#methodology)
 - [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
+- [Contact](#contact)
+- [Papers](#papers)
 
 ---
 
