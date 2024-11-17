@@ -33,15 +33,15 @@ SpQuant-SNN introduces an innovative quantization strategy for spiking neural ne
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/SpQuant-SNN.git
-cd SpQuant-SNN
+git clone https://github.com/Ahmedhasssan/IM_SNN-SpQuant_SNN.git
+cd IM_SNN-SpQuant_SNN
 pip install -r requirements.txt
 ```
 
 ## Usage
 
 ### Quick Start
-To train an SNN model with SpQuant-SNN quantization:
+To train an SNN model with IM_SNN-SpQuant_SNN quantization:
 
 ```python
 from spquant_snn import SpQuantTrainer
