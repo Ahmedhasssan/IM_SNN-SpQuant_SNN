@@ -99,7 +99,7 @@ For any inquiries or collaboration opportunities, feel free to reach out:
 Here are the references cited in this repository:
 
 1. **IM-SNN**: Hasssan, A., Meng, J., Anupreetham, A., & Seo, J. S. (2024, August). IM-SNN: Memory-Efficient Spiking Neural Network with Low-Precision Membrane Potentials and Weights. IEEE/ACM International Conference on Neuromorphic Systems (ICONS).*. [Link to paper](https://par.nsf.gov/biblio/10545833).
-2. **Sp-QuantSNN**: Hasssan, Ahmed, Jian Meng, Anupreetham Anupreetham, and Jae-sun Seo. "SpQuant-SNN: ultra-low precision membrane potential with sparse activations unlock the potential of on-device spiking neural networks applications." Frontiers in Neuroscience 18 (2024): 1440000. [Link to paper](file:///Users/ah2288/Downloads/fnins-2-1440000.pdf).
+2. **Sp-QuantSNN**: Hasssan, Ahmed, Jian Meng, Anupreetham Anupreetham, and Jae-sun Seo. "SpQuant-SNN: ultra-low precision membrane potential with sparse activations unlock the potential of on-device spiking neural networks applications." Frontiers in Neuroscience 18 (2024): 1440000. [Link to paper](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2024.1440000/full).
 
 
 We welcome feedback, suggestions, and contributions to enhance SpQuant-SNN!
